@@ -95,3 +95,6 @@ console.log(potionsBoutique);
 for (let i = 0; i < potionsBoutique.length; i++) {
   console.log("Nous avons de la " + potionsBoutique[i] + " !");
 }
+
+potionsBoutique.push("Potion d'invisibilité");
+console.log(potionsBoutique);
