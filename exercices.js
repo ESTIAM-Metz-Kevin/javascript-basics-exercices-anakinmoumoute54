@@ -88,3 +88,14 @@ if (quantiteDemandee > stockPotions) {
     console.log(`Achat réussi ! Il reste "+ stockPotions +" potions en stock.`);
     console.log(`Il vous reste "+ bourseAventurier +" pièces d'or.`);
 }
+
+
+let potionsBoutique = ["Potion de soin", "Potion de force", "Potion d'endurance"];
+console.log(potionsBoutique);
+
+let potionsBoutique = ["Potion de soin", "Potion de force", "Potion d'endurance"];
+
+let potionsBoutique = ["Potion de soin", "Potion de force", "Potion d'endurance"];
+for (let i = 0; i < potionsBoutique.length; i++) {
+  console.log("Nous avons de la " + potionsBoutique[i] + " !");
+}
