@@ -3,8 +3,6 @@ const nom_boutique = "MaSuperBoutiqueDePotions";
 let nb_potion_soins = 1;
 let prix_potion_soins = 2;
 let boutique_oc = true;
-
-let nom_boutique = "MaSuperBoutiqueDePotions"; 
 let boutique_ouverte = true;
 
 if (boutique_ouverte) {
@@ -71,3 +69,22 @@ function affichage(
       return "Vous ne pouvez pas acheter autant de potions";
     }
   }
+
+let bourseAventurier = 100;
+let stockPotions = 10;
+let prixPotion = 15;
+
+let quantiteDemandee = 5;
+
+if (quantiteDemandee > stockPotions) {
+    console.log("Il n'y a pas assez de potions en stock.");
+} else if (quantiteDemandee * prixPotion > bourseAventurier) {
+    console.log("Vous n'avez pas assez d'argent pour acheter ces potions.");
+} else {
+
+    stockPotions -= quantiteDemandee;
+    bourseAventurier -= quantiteDemandee * prixPotion;
+
+    console.log(`Achat réussi ! Il reste "+ stockPotions +" potions en stock.`);
+    console.log(`Il vous reste "+ bourseAventurier +" pièces d'or.`);
+}
