@@ -98,3 +98,5 @@ for (let i = 0; i < potionsBoutique.length; i++) {
 
 potionsBoutique.push("Potion d'invisibilité");
 console.log(potionsBoutique);
+Liste_potions.pop();
+console.log(Liste_potions);
