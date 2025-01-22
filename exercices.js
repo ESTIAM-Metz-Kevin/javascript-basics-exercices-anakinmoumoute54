@@ -48,3 +48,26 @@ function affichage(
         );
     }
   }
+
+  
+  function demande_potion_soin(
+    prix_potion_soins,
+    nb_potion_soins,
+    argent_aventurier
+  ) {
+    const nb_achat = prompt(
+      "Combien de potion(s) de soin souhaitez-vous acheter ?"
+    );
+    const prix_final = nb_achat * prix_potion_soins;
+    if (nb_achat <= nb_potion_soins && prix_final <= argent_aventurier) {
+      return (
+        "Le prix de " +
+        nb_achat +
+        " potions de soins : " +
+        +prix_final +
+        " 🪙 mon cher Aventurier. 💸"
+      );
+    } else {
+      return "Vous ne pouvez pas acheter autant de potions";
+    }
+  }
