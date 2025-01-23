@@ -90,7 +90,7 @@ if (quantiteDemandee > stockPotions) {
 }
 
 
-let potionsBoutique = ["Potion de soin", "Potion de force", "Potion d'endurance"];
+let = ["Potion de soin", "Potion de force", "Potion d'endurance"];
 console.log(potionsBoutique);
 for (let i = 0; i < potionsBoutique.length; i++) {
   console.log("Nous avons de la " + potionsBoutique[i] + " !");
@@ -100,3 +100,26 @@ potionsBoutique.push("Potion d'invisibilité");
 console.log(potionsBoutique);
 potionsBoutique.pop();
 console.log(potionsBoutique)
+
+let potionsBoutique ={
+    potionSoin: {
+      nom: "Potion de soin",
+      prix: 10,
+      stock: 20
+    },
+
+    potionForce: {
+      nom: "Potion de force",
+      prix: 15,
+      stock: 15
+    },
+    potionEndurance: {
+      nom: "Potion d'endurance",
+      prix: 12,
+      stock: 10
+    }
+  };
+  
+  console.log(potionsBoutique);
+  
+
